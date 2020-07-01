@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/level1music.wav-a4ffc09ef6d5374826375e9e1b746f32.sample"
+
+[deps]
+
+source_file="res://GameSounds/level1music.wav"
+source_md5="f6e5b325fbc13da3a0c2f8f1e8136fc0"
+
+dest_files=[ "res://.import/level1music.wav-a4ffc09ef6d5374826375e9e1b746f32.sample" ]
+dest_md5="d8ca19b7e3f8acb61c9a68e9162bfdc9"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

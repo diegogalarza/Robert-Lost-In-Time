@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/explosion.wav-9777d88047f45fa004922a5b226a640e.sample"
+
+[deps]
+
+source_file="res://GameSounds/explosion.wav"
+source_md5="4ca822a716390ed521a781beeabf2136"
+
+dest_files=[ "res://.import/explosion.wav-9777d88047f45fa004922a5b226a640e.sample" ]
+dest_md5="452e618076d42e635e646f30d1c85a88"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

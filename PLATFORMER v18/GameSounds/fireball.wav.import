@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fireball.wav-8a9c43dfc7d409e3cb88a5ab98497548.sample"
+
+[deps]
+
+source_file="res://GameSounds/fireball.wav"
+source_md5="26afc33128861ae151b78283b0ccabcd"
+
+dest_files=[ "res://.import/fireball.wav-8a9c43dfc7d409e3cb88a5ab98497548.sample" ]
+dest_md5="87b1354f1006a4e8db69004931d508b7"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

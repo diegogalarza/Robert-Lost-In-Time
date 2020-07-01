@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/collect_sound.wav-64032b2f1536e865e3533a0bd48b71f6.sample"
+
+[deps]
+
+source_file="res://GameSounds/collect_sound.wav"
+source_md5="2a40ed8686118cee229ca2717e88210f"
+
+dest_files=[ "res://.import/collect_sound.wav-64032b2f1536e865e3533a0bd48b71f6.sample" ]
+dest_md5="9d2dd9f4acbcc4c2e07d96d9946fe25f"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

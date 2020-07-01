@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/govermusic.wav-3ad8586059eedb9f19e14aa48ed62b72.sample"
+
+[deps]
+
+source_file="res://GameSounds/govermusic.wav"
+source_md5="4698e3a6b6c3d08c9dfe644f8bfb15c9"
+
+dest_files=[ "res://.import/govermusic.wav-3ad8586059eedb9f19e14aa48ed62b72.sample" ]
+dest_md5="8374e7d867ee274a873b4bcd9f9e0e52"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

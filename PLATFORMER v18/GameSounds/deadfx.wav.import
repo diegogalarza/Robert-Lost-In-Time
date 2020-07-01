@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/deadfx.wav-e79ccde9047b3337b47e7f485679dc14.sample"
+
+[deps]
+
+source_file="res://GameSounds/deadfx.wav"
+source_md5="79e01f22324ea167c3e7985256e92226"
+
+dest_files=[ "res://.import/deadfx.wav-e79ccde9047b3337b47e7f485679dc14.sample" ]
+dest_md5="085ff91eec39f8bed27c0901b5386692"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
