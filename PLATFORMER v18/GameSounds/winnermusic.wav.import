@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/winnermusic.wav-c4334ffc367203667e5cadfc8dd399e6.sample"
+
+[deps]
+
+source_file="res://GameSounds/winnermusic.wav"
+source_md5="4178e801bb46c49e5d3956e5637574c2"
+
+dest_files=[ "res://.import/winnermusic.wav-c4334ffc367203667e5cadfc8dd399e6.sample" ]
+dest_md5="326aaaa490ee29a5f344a072078d5208"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

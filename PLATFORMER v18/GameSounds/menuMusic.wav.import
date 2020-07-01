@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/menuMusic.wav-0594e7e3a8dc2062dc15426c98136e5a.sample"
+
+[deps]
+
+source_file="res://GameSounds/menuMusic.wav"
+source_md5="eb386bd01b2e15b373543194c00fc9f7"
+
+dest_files=[ "res://.import/menuMusic.wav-0594e7e3a8dc2062dc15426c98136e5a.sample" ]
+dest_md5="cda6f3ab9bcf6bfb2fc5a2ff4cdb819a"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
