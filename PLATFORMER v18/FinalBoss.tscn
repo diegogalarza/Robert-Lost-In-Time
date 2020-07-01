@@ -1,0 +1,86 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://FinalBoss.gd" type="Script" id=1]
+[ext_resource path="res://FINALBOSS/idle0.png" type="Texture" id=2]
+[ext_resource path="res://FINALBOSS/walk0.png" type="Texture" id=3]
+[ext_resource path="res://FINALBOSS/walk1.png" type="Texture" id=4]
+[ext_resource path="res://FINALBOSS/walk2.png" type="Texture" id=5]
+[ext_resource path="res://FINALBOSS/walk3.png" type="Texture" id=6]
+[ext_resource path="res://FINALBOSS/walk4.png" type="Texture" id=7]
+[ext_resource path="res://FINALBOSS/walk5.png" type="Texture" id=8]
+[ext_resource path="res://FINALBOSS/attack0.png" type="Texture" id=9]
+[ext_resource path="res://FINALBOSS/attack1.png" type="Texture" id=10]
+[ext_resource path="res://FINALBOSS/attack2.png" type="Texture" id=11]
+[ext_resource path="res://FINALBOSS/attack3.png" type="Texture" id=12]
+[ext_resource path="res://FINALBOSS/attack4.png" type="Texture" id=13]
+[ext_resource path="res://FINALBOSS/attack5.png" type="Texture" id=14]
+[ext_resource path="res://FINALBOSS/attack6.png" type="Texture" id=15]
+[ext_resource path="res://FINALBOSS/attack7.png" type="Texture" id=16]
+[ext_resource path="res://FINALBOSS/stomp0.png" type="Texture" id=17]
+[ext_resource path="res://FINALBOSS/stomp1.png" type="Texture" id=18]
+[ext_resource path="res://FINALBOSS/stomp2.png" type="Texture" id=19]
+[ext_resource path="res://FINALBOSS/dead2.png" type="Texture" id=20]
+[ext_resource path="res://FINALBOSS/dead5.png" type="Texture" id=21]
+[ext_resource path="res://FINALBOSS/dead6.png" type="Texture" id=22]
+[ext_resource path="res://FINALBOSS/dead7.png" type="Texture" id=23]
+[ext_resource path="res://FINALBOSS/dead8.png" type="Texture" id=24]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Stomp",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ) ],
+"loop": false,
+"name": "Dead",
+"speed": 8.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 34.953, 43.5734 )
+
+[node name="FinalBoss" type="KinematicBody2D" index="0"]
+
+scale = Vector2( 2.53528, 2.53528 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Position2D" type="Position2D" parent="." index="0"]
+
+position = Vector2( -1.48566, 22.6616 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="1"]
+
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "Run"
+frame = 5
+playing = true
+flip_h = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
+
+position = Vector2( -4.37047, -1.31114 )
+shape = SubResource( 2 )
+
+

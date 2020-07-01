@@ -1,0 +1,99 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://Sprites_Roberto/Jump01.png" type="Texture" id=2]
+[ext_resource path="res://Sprites_Roberto/Run02.png" type="Texture" id=3]
+[ext_resource path="res://Sprites_Roberto/Run03.png" type="Texture" id=4]
+[ext_resource path="res://Sprites_Roberto/Run04.png" type="Texture" id=5]
+[ext_resource path="res://Sprites_Roberto/Run05.png" type="Texture" id=6]
+[ext_resource path="res://Sprites_Roberto/Run06.png" type="Texture" id=7]
+[ext_resource path="res://Sprites_Roberto/Run07.png" type="Texture" id=8]
+[ext_resource path="res://Sprites_Roberto/Run08.png" type="Texture" id=9]
+[ext_resource path="res://Sprites_Roberto/Run09.png" type="Texture" id=10]
+[ext_resource path="res://Sprites_Roberto/Run10.png" type="Texture" id=11]
+[ext_resource path="res://Sprites_Roberto/Jump03.png" type="Texture" id=12]
+[ext_resource path="res://Sprites_Roberto/Dead01.png" type="Texture" id=13]
+[ext_resource path="res://Sprites_Roberto/Jump02.png" type="Texture" id=14]
+[ext_resource path="res://Sprites_Roberto/Fire0.png" type="Texture" id=15]
+[ext_resource path="res://jump.wav" type="AudioStream" id=16]
+
+[sub_resource type="SpriteFrames" id=1]
+
+resource_local_to_scene = true
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "Run",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": false,
+"name": "Dead",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 4.98
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": false,
+"name": "Shoot",
+"speed": 1.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.58868, 18.4059 )
+
+[node name="Player" type="KinematicBody2D"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Sprite" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 0.205479, 0.210046 )
+frames = SubResource( 1 )
+animation = "Idle"
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 0.558076, 1.72926 )
+scale = Vector2( 1.47103, 1.12413 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Jump_fx" type="AudioStreamPlayer2D" parent="." index="2"]
+
+stream = ExtResource( 16 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="Position2D" type="Position2D" parent="." index="3"]
+
+position = Vector2( 19.4484, 5.30608 )
+
+

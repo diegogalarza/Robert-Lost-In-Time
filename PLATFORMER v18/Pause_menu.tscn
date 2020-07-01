@@ -1,0 +1,196 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Pause.gd" type="Script" id=1]
+[ext_resource path="res://Animated.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://MenuButtons/button_continuar.png" type="Texture" id=3]
+[ext_resource path="res://MenuButtons/button_menu.png" type="Texture" id=4]
+[ext_resource path="res://MenuButtons/button_salir.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 50
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Pause_menu" type="CanvasLayer" index="0"]
+
+layer = 2
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+_sections_unfolded = [ "Pause" ]
+__meta__ = {
+"_edit_vertical_guides_": [ 200.0, 440.0 ]
+}
+
+[node name="Pause" type="Control" parent="." index="0"]
+
+pause_mode = 2
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 22.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Overlay" type="ColorRect" parent="Pause" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 639.0
+margin_bottom = 360.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 0.470588 )
+
+[node name="Container" type="Container" parent="Pause" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 637.0
+margin_bottom = 361.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Label" type="Label" parent="Pause/Container" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 256.0
+margin_top = 16.0
+margin_right = 383.0
+margin_bottom = 72.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "PAUSA"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Btn_continue" type="Button" parent="Pause/Container" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 187.0
+margin_top = 103.0
+margin_right = 1908.0
+margin_bottom = 588.0
+rect_scale = Vector2( 0.155, 0.155 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 3 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Btn_menu" type="Button" parent="Pause/Container" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 191.0
+margin_top = 187.0
+margin_right = 1853.0
+margin_bottom = 672.0
+rect_scale = Vector2( 0.155, 0.155 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 4 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Btn_exit" type="Button" parent="Pause/Container" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 191.0
+margin_top = 268.0
+margin_right = 1853.0
+margin_bottom = 753.0
+rect_scale = Vector2( 0.155, 0.155 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 5 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[connection signal="pressed" from="Pause/Container/Btn_continue" to="Pause" method="_on_Btn_continue_pressed"]
+
+[connection signal="pressed" from="Pause/Container/Btn_menu" to="Pause" method="_on_Btn_menu_pressed"]
+
+[connection signal="pressed" from="Pause/Container/Btn_exit" to="Pause" method="_on_Btn_exit_pressed"]
+
+

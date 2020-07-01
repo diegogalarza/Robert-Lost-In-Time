@@ -1,0 +1,51 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Enemy2_moving.gd" type="Script" id=1]
+[ext_resource path="res://ENEMY02/Run 0.png" type="Texture" id=2]
+[ext_resource path="res://ENEMY02/Run 1.png" type="Texture" id=3]
+[ext_resource path="res://ENEMY02/Run 2.png" type="Texture" id=4]
+[ext_resource path="res://ENEMY02/Run 3.png" type="Texture" id=5]
+[ext_resource path="res://ENEMY02/Run 4.png" type="Texture" id=6]
+[ext_resource path="res://ENEMY02/Run 5.png" type="Texture" id=7]
+[ext_resource path="res://ENEMY02/Dead.png" type="Texture" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "Run",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 69.647, 100.767 )
+
+[node name="Enemy2_moving" type="KinematicBody2D"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+
+frames = SubResource( 1 )
+animation = "Run"
+frame = 2
+playing = true
+_sections_unfolded = [ "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+shape = SubResource( 2 )
+
+

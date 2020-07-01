@@ -1,0 +1,63 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Enemy4_static2.gd" type="Script" id=1]
+[ext_resource path="res://ENEMY04/dead0.png" type="Texture" id=2]
+[ext_resource path="res://ENEMY04/dead1.png" type="Texture" id=3]
+[ext_resource path="res://ENEMY04/dead2.png" type="Texture" id=4]
+[ext_resource path="res://ENEMY04/dead3.png" type="Texture" id=5]
+[ext_resource path="res://ENEMY04/dead4.png" type="Texture" id=6]
+[ext_resource path="res://ENEMY04/dead5.png" type="Texture" id=7]
+[ext_resource path="res://ENEMY04/dead6.png" type="Texture" id=8]
+[ext_resource path="res://ENEMY04/shoot1.png" type="Texture" id=9]
+[ext_resource path="res://ENEMY04/shoot2.png" type="Texture" id=10]
+[ext_resource path="res://ENEMY04/shoot3.png" type="Texture" id=11]
+[ext_resource path="res://ENEMY04/shoot4.png" type="Texture" id=12]
+[ext_resource path="res://ENEMY04/shoot5.png" type="Texture" id=13]
+[ext_resource path="res://ENEMY04/shoot6.png" type="Texture" id=14]
+[ext_resource path="res://ENEMY04/shoot7.png" type="Texture" id=15]
+[ext_resource path="res://ENEMY04/shoot8.png" type="Texture" id=16]
+[ext_resource path="res://ENEMY04/shoot9.png" type="Texture" id=17]
+[ext_resource path="res://ENEMY04/shoot10.png" type="Texture" id=18]
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "Dead",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 8.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 59.3294, 91.5051 )
+
+[node name="Enemy4_static2" type="KinematicBody2D" index="0" groups=[
+"Enemies",
+]]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+
+frames = SubResource( 3 )
+animation = "Attack"
+playing = true
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 3.60999, 6.31749 )
+shape = SubResource( 2 )
+
+

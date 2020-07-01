@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Enemy5_static.gd" type="Script" id=1]
+[ext_resource path="res://ENEMY05/frame_3_delay-0.1s.png" type="Texture" id=2]
+[ext_resource path="res://ENEMY05/frame_4_delay-0.2s.png" type="Texture" id=3]
+[ext_resource path="res://ENEMY05/frame_5_delay-0.1s.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 6.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 21.4214, 35.6299 )
+
+[node name="Enemy5_static" type="KinematicBody2D" index="0" groups=[
+"Enemies",
+]]
+
+scale = Vector2( 2.90624, 2.90624 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 0.2, 0.2 )
+frames = SubResource( 1 )
+animation = "Attack"
+frame = 2
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 9.52894, 5.88553 )
+shape = SubResource( 2 )
+
+

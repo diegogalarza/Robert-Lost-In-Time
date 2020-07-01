@@ -1,0 +1,52 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Enemy5_moving.gd" type="Script" id=1]
+[ext_resource path="res://ENEMY05/run0.png" type="Texture" id=2]
+[ext_resource path="res://ENEMY05/run1.png" type="Texture" id=3]
+[ext_resource path="res://ENEMY05/run2.png" type="Texture" id=4]
+[ext_resource path="res://ENEMY05/run3.png" type="Texture" id=5]
+[ext_resource path="res://ENEMY05/run4.png" type="Texture" id=6]
+[ext_resource path="res://ENEMY05/run5.png" type="Texture" id=7]
+[ext_resource path="res://ENEMY05/run6.png" type="Texture" id=8]
+[ext_resource path="res://ENEMY05/run7.png" type="Texture" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Run",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 22.061, 28.8048 )
+
+[node name="Enemy5_moving" type="KinematicBody2D" index="0" groups=[
+"Enemies",
+]]
+
+scale = Vector2( 18.8909, 18.8909 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 0.2, 0.2 )
+frames = SubResource( 1 )
+animation = "Run"
+frame = 7
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+shape = SubResource( 2 )
+
+
