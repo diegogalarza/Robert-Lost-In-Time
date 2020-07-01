@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Run 5.png-c20ead6090a7802b1686945a99121698.stex"
+
+[deps]
+
+source_file="res://ENEMY02/Run 5.png"
+source_md5="1b1eb356078b1d73a0d129f8a22fbfc8"
+
+dest_files=[ "res://.import/Run 5.png-c20ead6090a7802b1686945a99121698.stex" ]
+dest_md5="90c3611bda9b34ab570b82cbb89622ae"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
