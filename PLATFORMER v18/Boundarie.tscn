@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Boundarie.gd" type="Script" id=1]
+[ext_resource path="res://boundarie_1.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 31.517, 16.8036 )
+
+[node name="Boundarie" type="Area2D" groups=[
+"boundaries",
+]]
+
+position = Vector2( 254.121, 247.87 )
+scale = Vector2( 1.1371, 2.46945 )
+input_pickable = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+_sections_unfolded = [ "Audio Bus", "Pickable" ]
+__meta__ = {
+"_edit_horizontal_guides_": [ 167.377, 326.892 ],
+"_edit_vertical_guides_": [ 290.508, 217.734 ]
+}
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+position = Vector2( -0.383492, -0.100878 )
+scale = Vector2( 0.305504, 0.121497 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( -0.0756989, 23.2915 )
+scale = Vector2( 1, 0.594009 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_Boundarie_body_entered"]
+
+
