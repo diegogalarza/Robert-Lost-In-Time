@@ -1,0 +1,64 @@
+[gd_scene load_steps=42 format=2]
+
+[ext_resource path="res://Bk_Level2/frame_00_delay-0.1s.png" type="Texture" id=1]
+[ext_resource path="res://Bk_Level2/frame_01_delay-0.1s.png" type="Texture" id=2]
+[ext_resource path="res://Bk_Level2/frame_02_delay-0.1s.png" type="Texture" id=3]
+[ext_resource path="res://Bk_Level2/frame_03_delay-0.1s.png" type="Texture" id=4]
+[ext_resource path="res://Bk_Level2/frame_04_delay-0.1s.png" type="Texture" id=5]
+[ext_resource path="res://Bk_Level2/frame_05_delay-0.1s.png" type="Texture" id=6]
+[ext_resource path="res://Bk_Level2/frame_06_delay-0.1s.png" type="Texture" id=7]
+[ext_resource path="res://Bk_Level2/frame_07_delay-0.1s.png" type="Texture" id=8]
+[ext_resource path="res://Bk_Level2/frame_08_delay-0.15s.png" type="Texture" id=9]
+[ext_resource path="res://Bk_Level2/frame_09_delay-0.15s.png" type="Texture" id=10]
+[ext_resource path="res://Bk_Level2/frame_10_delay-0.15s.png" type="Texture" id=11]
+[ext_resource path="res://Bk_Level2/frame_11_delay-0.15s.png" type="Texture" id=12]
+[ext_resource path="res://Bk_Level2/frame_12_delay-0.15s.png" type="Texture" id=13]
+[ext_resource path="res://Bk_Level2/frame_13_delay-0.15s.png" type="Texture" id=14]
+[ext_resource path="res://Bk_Level2/frame_14_delay-0.15s.png" type="Texture" id=15]
+[ext_resource path="res://Bk_Level2/frame_15_delay-0.15s.png" type="Texture" id=16]
+[ext_resource path="res://Bk_Level2/frame_16_delay-0.15s.png" type="Texture" id=17]
+[ext_resource path="res://Bk_Level2/frame_17_delay-0.15s.png" type="Texture" id=18]
+[ext_resource path="res://Bk_Level2/frame_18_delay-0.15s.png" type="Texture" id=19]
+[ext_resource path="res://Bk_Level2/frame_19_delay-0.15s.png" type="Texture" id=20]
+[ext_resource path="res://Bk_Level2/frame_20_delay-0.15s.png" type="Texture" id=21]
+[ext_resource path="res://Bk_Level2/frame_21_delay-0.15s.png" type="Texture" id=22]
+[ext_resource path="res://Bk_Level2/frame_22_delay-0.15s.png" type="Texture" id=23]
+[ext_resource path="res://Bk_Level2/frame_23_delay-0.15s.png" type="Texture" id=24]
+[ext_resource path="res://Bk_Level2/frame_24_delay-0.15s.png" type="Texture" id=25]
+[ext_resource path="res://Bk_Level2/frame_25_delay-0.15s.png" type="Texture" id=26]
+[ext_resource path="res://Bk_Level2/frame_26_delay-0.15s.png" type="Texture" id=27]
+[ext_resource path="res://Bk_Level2/frame_27_delay-0.15s.png" type="Texture" id=28]
+[ext_resource path="res://Bk_Level2/frame_28_delay-0.15s.png" type="Texture" id=29]
+[ext_resource path="res://Bk_Level2/frame_29_delay-0.15s.png" type="Texture" id=30]
+[ext_resource path="res://Bk_Level2/frame_30_delay-0.15s.png" type="Texture" id=31]
+[ext_resource path="res://Bk_Level2/frame_31_delay-0.15s.png" type="Texture" id=32]
+[ext_resource path="res://Bk_Level2/frame_32_delay-0.15s.png" type="Texture" id=33]
+[ext_resource path="res://Bk_Level2/frame_33_delay-0.15s.png" type="Texture" id=34]
+[ext_resource path="res://Bk_Level2/frame_34_delay-0.15s.png" type="Texture" id=35]
+[ext_resource path="res://Bk_Level2/frame_35_delay-0.15s.png" type="Texture" id=36]
+[ext_resource path="res://Bk_Level2/frame_36_delay-0.15s.png" type="Texture" id=37]
+[ext_resource path="res://Bk_Level2/frame_37_delay-0.15s.png" type="Texture" id=38]
+[ext_resource path="res://Bk_Level2/frame_38_delay-0.1s.png" type="Texture" id=39]
+[ext_resource path="res://Bk_Level2/frame_39_delay-0.1s.png" type="Texture" id=40]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ) ],
+"loop": true,
+"name": "bkWorld2",
+"speed": 5.0
+} ]
+
+[node name="World3" type="Node" index="0"]
+
+[node name="Bk_World2" type="AnimatedSprite" parent="." index="0"]
+
+position = Vector2( 752.953, 193.029 )
+scale = Vector2( 2.13614, 1.79667 )
+frames = SubResource( 1 )
+animation = "bkWorld2"
+frame = 29
+playing = true
+
+
