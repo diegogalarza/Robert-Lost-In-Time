@@ -4,13 +4,15 @@ _It's a 2D Platformer where Robert, the main character has to recover every one 
 
 The game has full compatibility, meaning it can be played on any Videogame console, Computer or Mobile device such as Android or iOS.
 
+## Older Versions
+Due to limited storage on GitHub, other updates of our game can be found [here](https://drive.google.com/drive/folders/18zktKratFu6x7T2aTA9j8b_zox_jgxrG?usp=sharing).
+
 ## Content
-* **"Versions" folder** - Every version of our game with evey change made until the last one.
+* **"Versions" folder** - Every ALPHA version of our game.
 * **Documento Conceptual_GALARZA_OSPINA.pdf** - Main document description of the storyboard, Characters, NPC's, objectives, level characteristics, controls and UI elements (in Spanish).
 * **LogoApp.png** - Main logo of our game App.
-* **"PLATFORMER v18" folder** - Final version of our game in GodotEngine.
+* **"PLATFORMER v18" folder** - Latest version of our game in GodotEngine (missing some sounds due to file weight limit in github).
 * **Robert_Lost_in_Time.apk** - Final apk file for downloading in Android.
-
 ## Requirements
 * [Godot 3.0 or higher](https://godotengine.org/download/windows)
 * [OpenGL 2.1 / OpenGL ES 2.0 compatible hardware](https://www.opengl.org/)
@@ -23,8 +25,8 @@ The game has full compatibility, meaning it can be played on any Videogame conso
 Project for the subject "Videogames Development Introduction" at Pontificia Universidad Javeriana, Cali, Colombia, 2019.
 
 ## Authors
-* **Diego F. Galarza** - *Programming, Multi-platform compatibility, Game Design, Levels Design, Graphic Design & Sound Design* - [diegogalarza](https://github.com/diegogalarza)
-* **Victor M. Ospina** - *Programming, Level Design* - [VictorO98](https://github.com/VictorO98)
+* **Diego F. Galarza** - *Programming, Multi-platform compatibility, Game Design, Levels Design, Graphic & Sound Design* - [diegogalarza](https://github.com/diegogalarza)
+* **Victor M. Ospina** - *Programming, Level Design, Storyboard* - [VictorO98](https://github.com/VictorO98)
 
 ---
 Thank You, Enjoy.
