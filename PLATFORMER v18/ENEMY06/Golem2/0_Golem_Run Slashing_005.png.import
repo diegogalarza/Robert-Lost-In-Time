@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/0_Golem_Run Slashing_005.png-9a318488cd3901f4c4461b602ae23e92.stex"
+
+[deps]
+
+source_file="res://ENEMY06/Golem2/0_Golem_Run Slashing_005.png"
+source_md5="3f48bfbb7843207ae39713c44cfdfd12"
+
+dest_files=[ "res://.import/0_Golem_Run Slashing_005.png-9a318488cd3901f4c4461b602ae23e92.stex" ]
+dest_md5="9c62d3df272e0b34a1c0c377d54f78a7"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
