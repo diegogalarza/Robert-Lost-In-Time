@@ -12,7 +12,7 @@ Due to limited storage on GitHub, other updates of our game can be found [here](
 * **Documento Conceptual_GALARZA_OSPINA.pdf** - Main document description of the storyboard, Characters, NPC's, objectives, level characteristics, controls and UI elements (in Spanish).
 * **LogoApp.png** - Main logo of our game App.
 * **"PLATFORMER v18" folder** - Latest version of our game in GodotEngine (missing some sounds due to file weight limit in github).
-* **Robert_Lost_in_Time.apk** - Final apk file for downloading in Android.
+* **Robert_Lost_in_Time.apk** - Final apk file for downloading in Android, found [here.](https://drive.google.com/file/d/1zIS1WNBHe30UgkiB0WVUHfwMaVxi_lz6/view?usp=sharing)
 ## Requirements
 * [Godot 3.0 or higher](https://godotengine.org/download/windows)
 * [OpenGL 2.1 / OpenGL ES 2.0 compatible hardware](https://www.opengl.org/)
